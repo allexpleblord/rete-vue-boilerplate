@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <ModulesExample />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ModulesExample from "@/components/ModulesExample";
 
 export default {
-  name: "app",
   components: {
-    HelloWorld
+    ModulesExample
   }
 };
 </script>
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
+}
+
+// Styles from codepen which are necessary
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 </style>
